@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robanik/Rchatix/refs/heads/main/Srv.lua"))()
 
 -- LocalScript в StarterPlayerScripts
 -- Имя: ChatGui
